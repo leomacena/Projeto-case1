@@ -7,8 +7,8 @@ app.use(express.json())
 
 app.use(cors())
 
-const seriesController = require('./controllers/seriesController.js')
+const contentsController = require('./controllers/contentsController.js')
 
-seriesController.rotas(app)
+contentsController.rotas(app)
 
 module.exports = app
