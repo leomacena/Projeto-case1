@@ -16,10 +16,10 @@ class seriesController {
 
   static async inserir(req, res){
     const series = {
-      titulo: req.body.TITULO,
-      episodios: req.body.EPISODIOS,
-      temporadas: req.body.TEMPORADAS,
-      status: req.body.STATUS
+      titulo: req.body.titulo,
+      episodios: req.body.episodios,
+      temporadas: req.body.temporadas,
+      status: req.body.status
     }
 
     const result = await SeriesDAO.inserir(series)
@@ -43,10 +43,10 @@ class seriesController {
 
   static async atualizar(req, res){
     const series = {
-      titulo: req.body.TITULO,
-      episodios: req.body.EPISODIOS,
-      temporadas: req.body.TEMPORADAS,
-      status: req.body.STATUS
+      titulo: req.body.titulo,
+      episodios: req.body.episodios,
+      temporadas: req.body.temporadas,
+      status: req.body.status
     }
 
     const result = await SeriesDAO.atualizar(req.params.id, series)
